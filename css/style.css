@@ -1,0 +1,370 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --dark-color: #1a1a2e;
+  --light-color: #f4f4f9;
+  --white-color: #fff;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--light-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  background-color: var(--white-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo img {
+  max-height: 50px;
+}
+
+.hero {
+  background: linear-gradient(rgba(26, 26, 46, .7), rgba(26, 26, 46, .7)), url(https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=1740&auto=format&fit=crop) no-repeat center center/cover;
+  color: var(--white-color);
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  color: var(--white-color);
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: .8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-top: 1rem;
+  transition: background-color .3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-hover);
+}
+
+main section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.how-it-works {
+  background-color: var(--white-color);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  padding: 2rem;
+}
+
+.step span {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+  text-align: left;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 2rem;
+}
+
+footer a {
+  color: var(--white-color);
+}
+
+@media (min-width: 768px) {
+  .steps,
+  .product-list {
+    flex-direction: row;
+  }
+}
+
+.reader-content {
+  text-align: left !important;
+  background-color: var(--white-color) !important;
+  padding: 1.5rem 2rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .05) !important;
+  margin-top: 2rem !important;
+  font-size: 17px !important;
+}
+
+.reader-content div,
+.reader-content li,
+.reader-content p,
+.reader-content span,
+.reader-content td,
+.reader-content th {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  color: #333 !important;
+  background-color: transparent !important;
+}
+
+.reader-content h1,
+.reader-content h2,
+.reader-content h3,
+.reader-content h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  color: var(--dark-color) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.3 !important;
+}
+
+.reader-content h1 {
+  font-size: 2rem !important;
+}
+
+.reader-content h2 {
+  font-size: 1.7rem !important;
+}
+
+.reader-content h3 {
+  font-size: 1.4rem !important;
+}
+
+.reader-content p {
+  line-height: 1.7 !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.reader-content ol,
+.reader-content ul {
+  padding-left: 2rem !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.reader-content li {
+  margin-bottom: .5rem !important;
+}
+
+.reader-content a {
+  color: var(--primary-color) !important;
+  text-decoration: underline !important;
+  font-weight: 700 !important;
+}
+
+.reader-content a:hover {
+  color: var(--primary-hover) !important;
+}
+
+.reader-content table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 2rem 0 !important;
+  font-size: 15px !important;
+}
+
+.reader-content td,
+.reader-content th {
+  border: 1px solid #e0e0e0 !important;
+  padding: .8rem 1rem !important;
+  text-align: left !important;
+}
+
+.reader-content th {
+  background-color: var(--light-color) !important;
+  font-weight: 700 !important;
+  color: var(--dark-color) !important;
+}
+
+.reader-content tr:nth-child(even) {
+  background-color: #f9f9f9 !important;
+}
+
+.reader-content .doc-content {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.reader-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+.reader-container {
+  /* Ce conteneur sert simplement à encadrer notre iframe. */
+  width: 100%;
+}
+
+.reader-iframe {
+  width: 100%;      /* L'iframe prend toute la largeur disponible */
+  height: 85vh;     /* L'iframe prend 85% de la hauteur de l'écran */
+  border: none;     /* On s'assure qu'il n'y a pas de bordure */
+  display: block;   /* On garantit un comportement de bloc stable */
+}
+/*
+=============== STYLE POUR LE LECTEUR AUDIO ===============
+*/
+
+/* Conteneur principal du bloc audio */
+.audio-player-container {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+.audio-player-container h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.audio-player-container p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+/* Style de base pour l'élément audio */
+.custom-audio-player {
+  width: 100%;
+}
+
+/* --- Style avancé pour les navigateurs WebKit (Chrome, Safari, Edge) --- */
+
+/* Barre de progression globale (fond) */
+.custom-audio-player::-webkit-media-controls-timeline {
+  background-color: rgba(0, 123, 255, 0.2); /* Couleur de fond de la barre */
+  border-radius: 4px;
+  height: 8px;
+  margin: 0 15px;
+}
+
+/* Barre de progression (partie lue) */
+.custom-audio-player::-webkit-media-controls-current-time-display,
+.custom-audio-player::-webkit-media-controls-time-remaining-display {
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+/* Bouton de lecture/pause */
+.custom-audio-player::-webkit-media-controls-play-button {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+}
+.custom-audio-player::-webkit-media-controls-play-button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Curseur du son (le potentiomètre) */
+.custom-audio-player::-webkit-media-controls-volume-slider {
+    background-color: rgba(0, 123, 255, 0.2);
+    border-radius: 4px;
+}
+/*
+=============== STYLE ADDITIONNEL POUR PLYR.IO ===============
+*/
+
+/* On applique les couleurs de votre site au lecteur Plyr */
+:root {
+  --plyr-color-main: var(--primary-color); /* La couleur principale du lecteur sera la couleur primaire de votre site */
+  --plyr-control-radius: 5px; /* Arrondi des boutons pour correspondre au style de votre bouton "Débloquer" */
+  --plyr-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Assure la même police que le reste de votre site */
+}
+
+/* On s'assure que le conteneur du lecteur prend bien toute la largeur */
+.plyr {
+    width: 100%;
+}```
